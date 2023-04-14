@@ -1,6 +1,8 @@
 #!/bin/bash
-set -x
-apt_packages=(
+set -e
+
+# Dependency list for building kernel
+APT_PACKAGE=(
 	"crossbuild-essential-arm64"
 	"gcc-aarch64-linux-gnu"
 	"qemu-user-binfmt"
@@ -27,5 +29,5 @@ apt_packages=(
 )
 
 # Install dependency via apt
-echo Installing ${apt_packages[*]}
-apt-get install -y ${apt_packages[*]}
+echo Installing ${APT_PACKAGE[*]}
+apt-get install -y ${APT_PACKAGE[*]}
