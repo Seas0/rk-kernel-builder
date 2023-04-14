@@ -1,0 +1,15 @@
+[submodule "rkbin"]
+	path = rkbin
+	url = https://github.com/radxa/rkbin.git
+	branch = master
+	shallow = true
+[submodule "build"]
+	path = build
+	url = https://github.com/radxa/build.git
+	branch = debian
+	shallow = true
+[submodule "kernel"]
+	path = kernel
+	url = https://github.com/radxa/kernel.git
+	branch = linux-5.10-gen-rkr3.4
+	shallow = true
