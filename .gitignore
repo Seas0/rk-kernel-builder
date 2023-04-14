@@ -50,3 +50,6 @@ Makefile
 
 # Build outputs
 out/
+
+# Visual Studio Code
+.vscode*
