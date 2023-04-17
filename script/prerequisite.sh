@@ -29,13 +29,13 @@ APT_PACKAGE=(
 	"wget"
 )
 
-DOWNLOAD_DIR="/tmp/download"
+DOWNLOAD_DIR="/tmp/download/"
 DOWNLOAD_LIST=(
 	"https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/aarch64-linux-gnu/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu.tar.xz"
 	#"https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/aarch64-linux-gnu/runtime-gcc-linaro-7.5.0-2019.12-aarch64-linux-gnu.tar.xz"
 	#"https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/aarch64-linux-gnu/sysroot-glibc-linaro-2.25-2019.12-aarch64-linux-gnu.tar.xz"
 )
-EXTRACT_DIR="/tmp/extract"
+EXTRACT_DIR="/usr/local/"
 
 # Install dependencies via apt
 echo -e "\e[32mInstalling\e[0m \e[33m${APT_PACKAGE[*]}\e[0m"
