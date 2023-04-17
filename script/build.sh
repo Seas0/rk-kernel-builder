@@ -10,7 +10,7 @@ PATH="/usr/local/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin:$PATH"
 mk-kernel.sh rk3588-rock-5b
 
 # Set package revision
-REVISION="${99:-$REVISION}"
+REVISION="${REVISION:-99}"
 
 # Pack kernel for Debian
 pack-kernel.sh -d rockchip_linux_defconfig -r $REVISION
